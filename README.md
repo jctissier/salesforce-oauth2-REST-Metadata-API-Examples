@@ -48,11 +48,11 @@ This example was done purely from a Python script, which is why I had to scrape 
 ```Python
 oauth = SalesforceOAuth2(
     client_id='your_client_id',
-    redirect_uri='https://www.enter-url-here.com/',                     # Must match Connected App's Callback URL
+    redirect_uri='https://www.enter-url-here.com/',   # Must match Connected App's Callback URL
     sandbox=True
 )
 response = oauth.get_access_token()
-print(response.text)                                                    # Response's text content, find the Oauth2 URL
+print(response.text)                                  # Response's text content, find the Oauth2 URL
 ```
 *Response Text - HTML*
 ```HTML
