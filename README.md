@@ -8,7 +8,8 @@
 | SOAP API                      | Doc           | Code  |
 
 ## 1 - Username-Password OAuth Authentication Flow
-| Topic                         | Documentation |
+| Topic                         | Documentation | Code  |
+| ------------------------------|:-------------:|:-----:|
 
 [Salesforce Documentation](https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_understanding_username_password_oauth_flow.htm)
 
