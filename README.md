@@ -83,7 +83,7 @@ window.location.href = 'https://test.salesforce.com/?ec=302&startURL=%2Fsetup%2F
 * Enter your credentials and sign in, if successful, you will automatically be redirected to your <redirect_uri> (example: 'https://www.enter-url-here.com/')
 
 *Extract parameters from Callback URL*
-```Javascript
+```Markdown
 '
 https://www.enter-url-here.com/#
 access_token=00D7A000000DFeX%21AQcAQAq3T51g1uXSy13a0OLnzgJftZZDu6yMeYycS_Tgcb4r_m9Pl.0ttCVQjEfBRGk3xaDDPjCX3EMwozIDiTW4Ug9siU0z&
