@@ -35,7 +35,7 @@ class SalesforceOAuth2(object):
         """
 
         return "{site}{authorize_url}" \
-               "?response_type=code&client_id={client_id}&redirect_uri={redirect_uri}&prompt=login&scope=full".format(
+               "?response_type=code&client_id={client_id}&redirect_uri={redirect_uri}&prompt=login".format(
                     site=self.auth_site,
                     authorize_url=self._authorization_url,
                     client_id=self._client_id,
@@ -75,3 +75,35 @@ class SalesforceOAuth2(object):
         )
 
         return response
+    
+    
+"""
+Testing data
+
+import webbrowser
+import urllib.parse as urlparse
+
+oauth = SalesforceOAuth2(
+    client_id='your_client_id',
+    client_secret='your_client_secret',
+    redirect_uri='https://www.enter-url-here.com/',
+    sandbox=True
+)
+
+oauth_redirect = oauth.authorize_login_url()
+webbrowser.open(oauth_redirect)
+# Fill in your credentials and Login, you will be redirected to your app's callback URL, Copy the URL Link (with the parameters)
+
+# https://www.enter-url-here.com/?code=aPrxILdoIUt7J4zOidrhMRBqhwgwsTAh7expE53Qeh2KhelBXIzspDZ8nPV8t7uADsOHeWXz5g%3D%3D
+callback_url = input('Copy-Paste your callback URL and press ENTER')
+
+# Extract the code from the URL
+extract_code = urlparse.urlparse(url)
+code = urlparse.parse_qs(extract_code.query)['code'][0]
+print(code)
+# aPrxILdoIUt7J4zOidrhMRBqhwgwsTAh7expE53Qeh2KhelBXIzspDZ8nPV8t7uADsOHeWXz5g==
+
+# Retrieve access_token from Salesforce by sending authenticated code
+sf_authentication = oauth.get_access_token(code)
+print(sf_authentication.json())                 # Print the JSON response
+"""
