@@ -8,12 +8,8 @@
 | SOAP API                      | Doc           | Code  |
 
 ## 1 - Username-Password OAuth Authentication Flow
-| Topic                         | Documentation | Code  |
-| ------------------------------|:-------------:|:-----:|
-
-[Salesforce Documentation](https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_understanding_username_password_oauth_flow.htm)
-
-[Code Sample](https://github.com/jctissier/Salesforce-Oauth2-REST-SOAP-API-Python-Examples/blob/master/Oauth2-Flow/Salesforce-Username-Password-Oauth.py)
+| [Salesforce Documentation](https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_understanding_username_password_oauth_flow.htm)                         | [Code Sample](https://github.com/jctissier/Salesforce-Oauth2-REST-SOAP-API-Python-Examples/blob/master/Oauth2-Flow/Salesforce-Username-Password-Oauth.py) |
+| ------------------------------|:-------------:|
 
 **Example**
 ```Python
