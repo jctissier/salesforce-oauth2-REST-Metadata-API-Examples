@@ -6,8 +6,8 @@
 | [Oauth - Username-Password](https://github.com/jctissier/Salesforce-Oauth2-REST-SOAP-API-Python-Examples/blob/master/README.md#1---username-password-oauth-authentication-flow)     | [Link](https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_understanding_username_password_oauth_flow.htm)           | [Link](https://github.com/jctissier/Salesforce-Oauth2-REST-SOAP-API-Python-Examples/blob/master/Oauth2-Flow/Salesforce-Username-Password-Oauth.py)  |
 | [Oauth - User-Agent](https://github.com/jctissier/Salesforce-Oauth2-REST-SOAP-API-Python-Examples/blob/master/README.md#2---user-agent-oauth-authentication-flow)     | [Link](https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_understanding_user_agent_oauth_flow.htm)           | [Link](https://github.com/jctissier/Salesforce-Oauth2-REST-SOAP-API-Python-Examples/blob/master/Oauth2-Flow/Salesforce-User-Agent-Flow.py)  |
 | [Oauth - Web Server](https://github.com/jctissier/Salesforce-Oauth2-REST-SOAP-API-Python-Examples/blob/master/README.md#3---web-server-oauth-authentication-flow)     | [Link](https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_understanding_web_server_oauth_flow.htm)           | [Link](https://github.com/jctissier/Salesforce-Oauth2-REST-SOAP-API-Python-Examples/blob/master/Oauth2-Flow/Salesforce-Web-Server-Flow.py)  |
-| REST API                      | Doc           | Code  |
-| SOAP API                      | Doc           | Code  |
+| REST API - Not completed                      | Doc           | Code  |
+| SOAP API - Not completed                      | Doc           | Code  |
 
 ***
 
