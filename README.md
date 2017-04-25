@@ -1,4 +1,4 @@
-# Salesforce OAuth2 Examples (Python)
+# Salesforce OAuth2, REST & SOAP API Examples (Python)
 
 ## Table of Content
 | Topic                         | Documentation | Code  |
