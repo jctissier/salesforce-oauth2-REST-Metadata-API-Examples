@@ -8,7 +8,7 @@
 | [Oauth - Web Server](https://github.com/jctissier/Salesforce-Oauth2-REST-SOAP-API-Python-Examples/blob/master/README.md#3---web-server-oauth-authentication-flow)     | [Link](https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_understanding_web_server_oauth_flow.htm)           | [Link](https://github.com/jctissier/Salesforce-Oauth2-REST-SOAP-API-Python-Examples/blob/master/Oauth2-Flow/Salesforce-Web-Server-Flow.py)  |
 | REST API - Not completed                      | Doc           | Code  |
 | SOAP API - Not completed                      | Doc           | Code  |
-| [Notes](https://github.com/jctissier/Salesforce-Oauth2-REST-SOAP-API-Python-Examples/blob/master/README.md#notes)                     | Doc           | Code  |
+| [Notes](https://github.com/jctissier/Salesforce-Oauth2-REST-SOAP-API-Python-Examples/blob/master/README.md#notes)                
 
 ***
 
