@@ -96,3 +96,8 @@ https://www.enter-url-here.com/#
     token_type=Bearer
 ```
 
+## 3 - Web Server OAuth Authentication Flow
+| [Salesforce Documentation](https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_understanding_web_server_oauth_flow.htm)                         | [Code Sample](https://github.com/jctissier/Salesforce-Oauth2-REST-SOAP-API-Python-Examples/blob/master/Oauth2-Flow/Salesforce-Web-Server-Oauth.py) |
+| ------------------------------|:-------------:|
+
+**Example**
