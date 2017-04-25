@@ -42,6 +42,8 @@ print(response)
 | ------------------------------|:-------------:|
 
 **Example**
+This example was done purely from a Python script, which is why I had to scrape the authorization URL. Once setup on a Web App, redirect will happen automatically.
+
 ```Python
 oauth = SalesforceOAuth2(
     client_id='your_client_id',
@@ -81,6 +83,15 @@ window.location.href = 'https://test.salesforce.com/?ec=302&startURL=%2Fsetup%2F
 
 *Extract parameters from Callback URL*
 ```Javascript
-https://www.enter-url-here.com/#access_token=00D7A000000DFeX%21AQcAQAq3T51g1uXSy13a0OLnzgJftZZDu6yMeYycS_Tgcb4r_m9Pl.0ttCVQjEfBRGk3xaDDPjCX3EMwozIDiTW4Ug9siU0z&instance_url=https%3A%2F%2Flularoe--Dev.cs44.my.salesforce.com&id=https%3A%2F%2Ftest.salesforce.com%2Fid%2F00D7A000000DFeXUAW%2F0057A000001XZo7QAG&issued_at=1493149331818&signature=7CGg53xYc7zJvGQI%2FCpCREC9Vg7BnnNkbIZpb4ZPrHk%3D&scope=full&token_type=Bearer
+'
+https://www.enter-url-here.com/#
+access_token=00D7A000000DFeX%21AQcAQAq3T51g1uXSy13a0OLnzgJftZZDu6yMeYycS_Tgcb4r_m9Pl.0ttCVQjEfBRGk3xaDDPjCX3EMwozIDiTW4Ug9siU0z&
+instance_url=https%3A%2F%2Flularoe--Dev.cs44.my.salesforce.com&
+id=https%3A%2F%2Ftest.salesforce.com%2Fid%2F00D7A000000DFeXUAW%2F0057A000001XZo7QAG&
+issued_at=1493149331818&
+signature=7CGg53xYc7zJvGQI%2FCpCREC9Vg7BnnNkbIZpb4ZPrHk%3D&
+scope=full&
+token_type=Bearer
+'
 ```
 
