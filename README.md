@@ -3,7 +3,8 @@
 ## Table of Content
 | Topic                         | Documentation | Code  |
 | ------------------------------|:-------------:|:-----:|
-| Oauth - Username-Password     | [Doc](https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_understanding_username_password_oauth_flow.htm)           | [Code](https://github.com/jctissier/Salesforce-Oauth2-REST-SOAP-API-Python-Examples/blob/master/Oauth2-Flow/Salesforce-Username-Password-Oauth.py)  |
+| Oauth - Username-Password     | [Link](https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_understanding_username_password_oauth_flow.htm)           | [Link](https://github.com/jctissier/Salesforce-Oauth2-REST-SOAP-API-Python-Examples/blob/master/Oauth2-Flow/Salesforce-Username-Password-Oauth.py)  |
+| Oauth - User-Agent     | [Link](https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_understanding_user_agent_oauth_flow.htm)           | [Link](https://github.com/jctissier/Salesforce-Oauth2-REST-SOAP-API-Python-Examples/blob/master/Oauth2-Flow/Salesforce-User-Agent-Flow.py)  |
 | REST API                      | Doc           | Code  |
 | SOAP API                      | Doc           | Code  |
 
