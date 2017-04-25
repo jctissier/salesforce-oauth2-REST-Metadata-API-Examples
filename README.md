@@ -84,7 +84,6 @@ window.location.href = 'https://test.salesforce.com/?ec=302&startURL=%2Fsetup%2F
 
 *Extract parameters from Callback URL*
 ```Markdown
-'
 https://www.enter-url-here.com/#
 access_token=00D7A000000DFeX%21AQcAQAq3T51g1uXSy13a0OLnzgJftZZDu6yMeYycS_Tgcb4r_m9Pl.0ttCVQjEfBRGk3xaDDPjCX3EMwozIDiTW4Ug9siU0z&
 instance_url=https%3A%2F%2Flularoe--Dev.cs44.my.salesforce.com&
@@ -93,6 +92,5 @@ issued_at=1493149331818&
 signature=7CGg53xYc7zJvGQI%2FCpCREC9Vg7BnnNkbIZpb4ZPrHk%3D&
 scope=full&
 token_type=Bearer
-'
 ```
 
