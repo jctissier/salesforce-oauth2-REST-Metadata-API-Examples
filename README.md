@@ -107,3 +107,18 @@ https://www.enter-url-here.com/#
 | ------------------------------|:-------------:|
 
 **Example**
+
+```Python
+import webbrowser
+import urllib.parse as urlparse
+
+oauth = SalesforceOAuth2(
+    client_id='3MVG93MGy9V8hF9OUJ3ZQIxQNppiA4_GumGzmtqqcNNb9oylvhR380qG2NpUf1eR84aAt7HLXTAS3MSfLUHeQ',
+    client_secret='3169024121687067308',
+    redirect_uri='https://www.enter-url-here.com/',
+    sandbox=True
+)
+
+oauth_redirect = oauth.authorize_login_url()
+webbrowser.open(oauth_redirect)
+```
