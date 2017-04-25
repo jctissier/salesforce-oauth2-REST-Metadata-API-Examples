@@ -41,6 +41,8 @@ print(response)
 }
 ```
 
+***
+
 ## 2 - User-Agent OAuth Authentication Flow
 | [Salesforce Documentation](https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_understanding_user_agent_oauth_flow.htm)                         | [Code Sample](https://github.com/jctissier/Salesforce-Oauth2-REST-SOAP-API-Python-Examples/blob/master/Oauth2-Flow/Salesforce-User-Agent-Flow.py) |
 | ------------------------------|:-------------:|
@@ -97,6 +99,8 @@ https://www.enter-url-here.com/#
     scope=full&
     token_type=Bearer
 ```
+
+***
 
 ## 3 - Web Server OAuth Authentication Flow
 | [Salesforce Documentation](https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_understanding_web_server_oauth_flow.htm)                         | [Code Sample](https://github.com/jctissier/Salesforce-Oauth2-REST-SOAP-API-Python-Examples/blob/master/Oauth2-Flow/Salesforce-Web-Server-Oauth.py) |
