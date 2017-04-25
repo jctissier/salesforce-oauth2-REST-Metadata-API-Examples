@@ -18,7 +18,7 @@ oauth = SalesforceOAuth2(
     username='your_username',
     password='your_password',
     token='your_token',
-    sandbox=True
+    sandbox=True                        # True = test.salesforce.com, False = login.salesforce.com
 )
 sf_authentication = oauth.get_access_token()
 response = sf_authentication.json()
