@@ -11,7 +11,7 @@
 [Salesforce Documentation](https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_understanding_username_password_oauth_flow.htm)
 
 **Example**
-```
+```Python
 oauth = SalesforceOAuth2(
     client_id='your_client_id',
     client_secret='your_client_secret',
@@ -25,7 +25,7 @@ response = sf_authentication.json()
 print(response)
 ```
 *JSON Response*
-```
+```JSON
 {
     'signature': 'B4UPTuymHFtTDZiI728H0LZ1/4LxebOjestj+EcwFDU=',
     'issued_at': '1493144749805',
