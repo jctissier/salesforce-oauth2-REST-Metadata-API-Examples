@@ -7,6 +7,7 @@ import requests
 class SalesforceOAuth2(object):
     """
         Salesforce Username-Password Oauth Authentication Flow
+        https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_understanding_username_password_oauth_flow.htm
     """
 
     _token_url = '/services/oauth2/token'
