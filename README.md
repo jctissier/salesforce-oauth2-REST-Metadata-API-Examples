@@ -108,17 +108,47 @@ https://www.enter-url-here.com/#
 
 **Example**
 
+This flow is normally used on a Web App, but the example below is done purely through Python since it's easier to show in an example.
+
 ```Python
-import webbrowser
+import webbrowser                           
 import urllib.parse as urlparse
 
 oauth = SalesforceOAuth2(
-    client_id='3MVG93MGy9V8hF9OUJ3ZQIxQNppiA4_GumGzmtqqcNNb9oylvhR380qG2NpUf1eR84aAt7HLXTAS3MSfLUHeQ',
-    client_secret='3169024121687067308',
+    client_id='your_client_id',
+    client_secret='your_client_secret',
     redirect_uri='https://www.enter-url-here.com/',
-    sandbox=True
+    sandbox=True                        # True = test.salesforce.com, False = login.salesforce.com
 )
 
 oauth_redirect = oauth.authorize_login_url()
-webbrowser.open(oauth_redirect)
+webbrowser.open(oauth_redirect)         # This will open the Authentication Salesforce Login page
+```
+* Fill in your credentials and Login, you will be redirected to your app's callback URL, Copy the URL Link (with the parameters)
+```Python
+# https://www.enter-url-here.com/?code=aPrxILdoIUt7J4zOidrhMRBqhwgwsTAh7expE53Qeh2KhelBXIzspDZ8nPV8t7uADsOHeWXz5g%3D%3D
+callback_url = input('Copy-Paste your callback URL and press ENTER')
+
+# Extract the code from the URL
+extract_code = urlparse.urlparse(url)
+code = urlparse.parse_qs(extract_code.query)['code'][0]
+print(code)
+# aPrxILdoIUt7J4zOidrhMRBqhwgwsTAh7expE53Qeh2KhelBXIzspDZ8nPV8t7uADsOHeWXz5g==
+
+# Retrieve access_token from Salesforce by sending authenticated code
+sf_authentication = oauth.get_access_token(code)
+print(sf_authentication.json())                 # Print the JSON response
+```
+*JSON Response*
+```JSON
+{
+    "signature": "B4UPTuymHFtTDZiI728H0LZ1/4LxebOjestj+EcwFDU=",
+    "issued_at": "1493144749805",
+    "instance_url": "https://na40.salesforce.com",
+    "id": "https://test.salesforce.com/id/00D7B000000DFeXUAW/0057A000001Zp0CQRD",
+    "token_type": "Bearer",
+    "access_token": "00D7AA00000DFeX!AQcAQCOOnJsOicbB6mknoxIH02wxjljnjKI739g1EoDBEOpQXomAV1iMG2EWGuU2gJ26o40ixi6jyD3AstyLgkiU29GNod2d",
+    "scope": "full",
+    "id_token": "aeJraWQiOiIyMDYiLCJ0eXAiOiJKV1QiLCJhbGciOEFSUzI1NiJ9.eyJhdF9oYXNoIjoiQUsxc01kZ3dqOVg2WEhVUVhkVC1ZZyIsInN1YiI6Imh0dHBzOi8vdGVzdC5zYWxlc2ZvcmNlLmNvbS9pZC8wMEQ3QTAwMDAwMERGZVhVQVcvMDA1N0EwMDAwMDFYWm83UUFHIiwiYXVkIjoiM01WRzkzTUd5OVY4aEY5T1VKM1pRSXhRTnBwaUE0X0d1bUd6bXRxcWNOTmI5b3lsdmhSMzgwcUcyTnBVZjFlUjg0YUF0N0hMWFRBUzNNU2ZMVUhlUSIsImlzcyI6Imh0dHBzOi8vdGVzdC5zYWxlc2ZvcmNlLmNvbSIsImV4cCI6MTQ5MzE1NjU4NiwiaWF0IjoxNDkzMTU2NDY2fQ.L8DCCk_7t69su7OcBNgPnPzZBB23UviNH-OjxkD8qSzKoN4dCCduyimaFz__ImxKQYjJ-q_ka1mIrvbi3qO1Y-3KgGNGRwkqPQiRPGOC-OWxfS8uhQfKZO9wNGKAkp0O93irMu3bNLsdp-NVVOrf9D1roaeQko3qTPizl5Z26AM-qGpXS8vW8TH7h8dcfzSYkI4SkDrSlZ46uhhbEJKkv4xxUHAzPvAu22eszDL3mPVnefMinvehTvTe3tZbtGOZWLMr61sq1VRlDQrLWW5JcMikCTcbgEhCyY1VvqIqDmXvs7GHRR-3_6Gplej5j3L_dGQ-LgY6F1KM6lSZ19aa11KhtWakKy4Jt4vuipJS88VPNGOG5uJ4GD2LEA4E_EjX6IqPHd5UFTwPxxGawGeigCko7KXlSTlizp2iMGbV3bnn0RHB8DipT0h_chKp60vPkWbeQF86JjuWOvqJwd6rmkctVo033EUGyPOCmr6s-OT9ZJLy2VB86OxD5A0zcdfNTnl7JHe1SF4cWASDduuYXF9XfAz9gjlGMAVRz557QPHtzLIXO0D18iKFZVks0kXviD2VmRTDSZ1GzKI29cu8JwfqSw-HuBImZBjUn-5AKAnr-D-8nBh2Nqh5DKCtDiMViWj_KxO5ORdNeObNN5SvgRtVLChCY0XBM5-wM49FK8A"
+}
 ```
