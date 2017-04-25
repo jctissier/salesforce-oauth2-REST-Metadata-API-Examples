@@ -64,7 +64,7 @@ class SalesforceOAuth2(object):
 Testing data
 
 oauth = SalesforceOAuth2(
-    client_id='3MVG93MGy9V8hF9OUJ3ZQIxQNppiA4_GumGzmtqqcNNb9oylvhR380qG2NpUf1eR84aAt7HLXTAS3MSfLUHeQ',
+    client_id='your_client_id',
     redirect_uri='https://www.enter-url-here.com/',
     sandbox=True
 )
