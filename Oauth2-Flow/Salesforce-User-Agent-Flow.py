@@ -57,3 +57,17 @@ class SalesforceOAuth2(object):
         )
 
         return response
+
+    
+    
+"""
+Testing data
+
+oauth = SalesforceOAuth2(
+    client_id='3MVG93MGy9V8hF9OUJ3ZQIxQNppiA4_GumGzmtqqcNNb9oylvhR380qG2NpUf1eR84aAt7HLXTAS3MSfLUHeQ',
+    redirect_uri='https://www.enter-url-here.com/',
+    sandbox=True
+)
+sf_authentication = oauth.get_access_token()
+print(sf_authentication.text)
+"""
