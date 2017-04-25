@@ -66,3 +66,21 @@ class SalesforceOAuth2(object):
         )
 
         return response
+
+    
+    
+"""
+Testing data
+
+oauth = SalesforceOAuth2(
+    client_id='your_client_id',
+    client_secret='your_client_secret',
+    username='your_username',
+    password='your_password',
+    token='your_token',
+    sandbox=True                        # True = test.salesforce.com, False = login.salesforce.com
+)
+sf_authentication = oauth.get_access_token()
+response = sf_authentication.json()
+print(response)
+"""
