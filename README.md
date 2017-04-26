@@ -154,6 +154,8 @@ print(sf_authentication.json())                 # Print the JSON response
 }
 ```
 
+***
+
 ## REST API using the Username-Password OAuth Authentication Flow
 | [Salesforce Documentation](https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_what_is_rest_api.htm)                         | [Code Sample](https://github.com/jctissier/Salesforce-Oauth2-REST-SOAP-API-Python-Examples/blob/master/REST-API/rest_api.py) |
 | ------------------------------|:-------------:|
