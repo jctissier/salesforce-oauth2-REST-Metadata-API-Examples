@@ -1,6 +1,6 @@
 # Salesforce OAuth2, REST & SOAP API Examples (Python)
 
-Python implementations of Salesforce Oauth2 Flows, as well as authenticated REST API and SOAP API requests. This reposi
+Python implementations of Salesforce Oauth2 Flows, as well as authenticated REST API and SOAP API requests. Grab the Python modules from this repository and get started!
 
 
 ## Table of Contents
