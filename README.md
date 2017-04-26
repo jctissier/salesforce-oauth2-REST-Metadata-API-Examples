@@ -85,7 +85,7 @@ window.location.href ='https://test.salesforce.com/?ec=302&startURL=%2Fsetup%2Fs
 </body>
 </html>
 ```
-*Extract Redirect URL*
+*Extract Redirect URL - [(with a URL Decoder)](http://meyerweb.com/eric/tools/dencoder/)*
 ```Javascript
 window.location.href = 'https://test.salesforce.com/?ec=302&startURL=%2Fsetup%2Fsecur%2FRemoteAccessAuthorizationPage.apexp%3Fsource%3DCAAAAVunKc0dfaE8wSjAwMDAwMDAwMDA0AAAAzvLd_MBDrJdD85NeTpeBvyJvMu13glHu-8SVW8OQVZoQkVxSt-DVCbYGXkgb-HaElPfp89r4HoQgxLsRC1awHznfguj2J1oJF3JRBdT3R2qgxT3l9yYCkzGnbE5-sdugAbszvylp78uGqPEJGguDD8a10tk7tktDeH02k5NWmF4UX8NM1oIiR_heDIw8TNOYRbTFhnqmSugZEGMiRj6ao7BTl1lxCtoZFERLtdKciNqkC0fLuFXFW4BDcQwTBacXfNm2ScrVZDGeRrNeHQYfJnPDJG1prLKJDrNOIyMtBslcoyYnDuuqBR0ENCdp64Yh69o74fVJMgwEjyM3ugVFHASpZp0AaWAy0P9XA5VXhNTA7eXFp9jLUw89NKNs5xwpxJOZe66oypSSVNjFCETsK8qVTzPCkL4QgGKLAd3Pzf5kXYSGpCTT7sZohaFY7yAMzJAn7gU7jsiA2D68dl-rjMgIGydVuGFq_4LF-EW4Zg%253D%253D';
 ```
