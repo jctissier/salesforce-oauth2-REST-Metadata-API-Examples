@@ -1,5 +1,5 @@
 # _author_ = "Jean-Claude Tissier"
-# _github_ = "https://github.com/jctissier/Salesforce-Oauth2-REST-SOAP-API-Python-Examples"
+# _github_ = "https://github.com/jctissier/Salesforce-Oauth2-REST-Metadata-API-Python-Examples"
 
 import requests
 
