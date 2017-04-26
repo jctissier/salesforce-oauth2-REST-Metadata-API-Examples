@@ -54,7 +54,7 @@ print(response)
 
 **Example**
 
-This example was done purely from a Python script, which is why I had to scrape the authorization URL. Once setup on a proper App, redirect to Salesforce's authentication will happen automatically.
+This example was created from a Python script, which is why I had to scrape the authorization URL. Once setup on a proper App, redirect to Salesforce's authentication will happen automatically.
 
 ```Python
 oauth = SalesforceOAuth2(
@@ -113,7 +113,7 @@ https://www.enter-url-here.com/#
 
 **Example**
 
-This flow is normally used on a Web App, but the example below is done purely through Python since it's easier to show in an example.
+This flow is normally used on a Web App, but the example below is done in Python since it's easier to show in an example.
 
 ```Python
 import webbrowser                           
