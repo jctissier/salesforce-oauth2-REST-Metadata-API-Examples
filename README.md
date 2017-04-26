@@ -1,13 +1,16 @@
 # Salesforce OAuth2, REST & SOAP API Examples (Python)
 
+Python implementations of Salesforce Oauth2 Flows, as well as authenticated REST API and SOAP API requests. This reposi
+
+
 ## Table of Contents
 | Topic                         | SF Documentation | Code Sample |
 | ------------------------------|:----------------:|:-----------:|
 | [Oauth - Username-Password](https://github.com/jctissier/Salesforce-Oauth2-REST-SOAP-API-Python-Examples/blob/master/README.md#1---username-password-oauth-authentication-flow)     | [Link](https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_understanding_username_password_oauth_flow.htm)           | [Link](https://github.com/jctissier/Salesforce-Oauth2-REST-SOAP-API-Python-Examples/blob/master/Oauth2-Flow/salesforce_username_password_flow.py)  |
 | [Oauth - User-Agent](https://github.com/jctissier/Salesforce-Oauth2-REST-SOAP-API-Python-Examples/blob/master/README.md#2---user-agent-oauth-authentication-flow)     | [Link](https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_understanding_user_agent_oauth_flow.htm)           | [Link](https://github.com/jctissier/Salesforce-Oauth2-REST-SOAP-API-Python-Examples/blob/master/Oauth2-Flow/salesforce_user_agent_flow.py)  |
 | [Oauth - Web Server](https://github.com/jctissier/Salesforce-Oauth2-REST-SOAP-API-Python-Examples/blob/master/README.md#3---web-server-oauth-authentication-flow)     | [Link](https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_understanding_web_server_oauth_flow.htm)           | [Link](https://github.com/jctissier/Salesforce-Oauth2-REST-SOAP-API-Python-Examples/blob/master/Oauth2-Flow/salesforce_web_server_flow.py)  |
-| [REST API](https://github.com/jctissier/Salesforce-Oauth2-REST-SOAP-API-Python-Examples#rest-api-using-the-username-password-oauth-authentication-flow)                      | [Link](https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_what_is_rest_api.htm)           | [Link](https://github.com/jctissier/Salesforce-Oauth2-REST-SOAP-API-Python-Examples/blob/master/REST-API/rest_api.py)  |
-| SOAP API - Not completed                      | [Link]           | [Link]  |
+| [Force.com REST API](https://github.com/jctissier/Salesforce-Oauth2-REST-SOAP-API-Python-Examples#rest-api-using-the-username-password-oauth-authentication-flow)                      | [Link](https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_what_is_rest_api.htm)           | [Link](https://github.com/jctissier/Salesforce-Oauth2-REST-SOAP-API-Python-Examples/blob/master/REST-API/rest_api.py)  |
+| [Force.com SOAP API] - Not completed                      | [Link]           | [Link]  |
 | [Notes](https://github.com/jctissier/Salesforce-Oauth2-REST-SOAP-API-Python-Examples/blob/master/README.md#notes)                
 
 ***
