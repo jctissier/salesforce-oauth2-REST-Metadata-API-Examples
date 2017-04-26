@@ -1,4 +1,4 @@
-# Salesforce OAuth2, REST & SOAP API Examples (Python)
+# Salesforce OAuth2, REST API and Metadata API Examples (Python)
 
 Python implementations of Salesforce Oauth2 Flows, as well as authenticated REST API, SOAP API and Metadata API requests. Grab the code from this repository and get started!
 
@@ -10,7 +10,6 @@ Python implementations of Salesforce Oauth2 Flows, as well as authenticated REST
 | [Oauth - User-Agent](https://github.com/jctissier/Salesforce-Oauth2-REST-SOAP-API-Python-Examples/blob/master/README.md#2---user-agent-oauth-authentication-flow)     | [Link](https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_understanding_user_agent_oauth_flow.htm)           | [Link](https://github.com/jctissier/Salesforce-Oauth2-REST-SOAP-API-Python-Examples/blob/master/Oauth2-Flow/salesforce_user_agent_flow.py)  |
 | [Oauth - Web Server](https://github.com/jctissier/Salesforce-Oauth2-REST-SOAP-API-Python-Examples/blob/master/README.md#3---web-server-oauth-authentication-flow)     | [Link](https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_understanding_web_server_oauth_flow.htm)           | [Link](https://github.com/jctissier/Salesforce-Oauth2-REST-SOAP-API-Python-Examples/blob/master/Oauth2-Flow/salesforce_web_server_flow.py)  |
 | [Force.com REST API](https://github.com/jctissier/Salesforce-Oauth2-REST-SOAP-API-Python-Examples#rest-api-using-the-username-password-oauth-authentication-flow)                      | [Link](https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/intro_what_is_rest_api.htm)           | [Link](https://github.com/jctissier/Salesforce-Oauth2-REST-SOAP-API-Python-Examples/blob/master/REST-API/rest_api.py)  |
-| [Force.com SOAP API](https://github.com/jctissier/Salesforce-Oauth2-REST-SOAP-API-Python-Examples/blob/master/README.md#soap-api---username-password-oauth-authentication-flow) - Not completed                      | [Link]           | [Link]  |
 | [Metadata API](https://github.com/jctissier/Salesforce-Oauth2-REST-SOAP-API-Python-Examples/blob/master/README.md#metadata-api---username-password-oauth-authentication-flow) - Not completed                      | [Link]           | [Link]  |
 | [Notes](https://github.com/jctissier/Salesforce-Oauth2-REST-SOAP-API-Python-Examples/blob/master/README.md#notes)                
 
@@ -196,11 +195,6 @@ print(get_request.json())
 {'recentItems': [], 'objectDescribe': {'feedEnabled': True, 'layoutable': True, 'replicateable': True, 'deprecatedAndHidden': False, 'updateable': True, 'mergeable': True, 'activateable': False, 'name': 'Account', 'searchable': True, 'queryable': True, 'undeletable': True, 'retrieveable': True, 'deletable': True, 'mruEnabled': True, 'isSubtype': False, 'customSetting': False, 'label': 'Account', 'triggerable': True, 'hasSubtypes': False, 'custom': False, 'urls': {'listviews': '/services/data/v39.0/sobjects/Account/listviews', 'compactLayouts': '/services/data/v39.0/sobjects/Account/describe/compactLayouts', 'defaultValues': '/services/data/v39.0/sobjects/Account/defaultValues?recordTypeId&fields', 'quickActions': '/services/data/v39.0/sobjects/Account/quickActions', 'rowTemplate': '/services/data/v39.0/sobjects/Account/{ID}', 'layouts': '/services/data/v39.0/sobjects/Account/describe/layouts', 'sobject': '/services/data/v39.0/sobjects/Account', 'describe': '/services/data/v39.0/sobjects/Account/describe', 'approvalLayouts': '/services/data/v39.0/sobjects/Account/describe/approvalLayouts'}, 'keyPrefix': '001', 'labelPlural': 'Accounts', 'createable': True}}
 """
 ```
-***
-
-## SOAP API - Username-Password OAuth Authentication Flow
-| [Salesforce Documentation](https://developer.salesforce.com/docs/atlas.en-us.api.meta/api/sforce_api_concepts_security.htm)                         | [Code Sample](https://github.com/jctissier/Salesforce-Oauth2-REST-SOAP-API-Python-Examples/blob/master/Salesforce-APIs/SOAP_Api.py) |
-| ------------------------------|:-------------:|
 
 ***
 
