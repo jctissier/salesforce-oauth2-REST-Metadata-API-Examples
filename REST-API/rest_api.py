@@ -2,7 +2,7 @@
 # _github_ = "https://github.com/jctissier/Salesforce-Oauth2-REST-SOAP-API-Python-Examples"
 
 import requests
-import username_password_flow as oauth
+import salesforce_username_password_flow as oauth
 
 
 class RESTApi(object):
