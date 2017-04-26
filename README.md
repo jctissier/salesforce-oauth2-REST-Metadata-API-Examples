@@ -159,6 +159,8 @@ print(sf_authentication.json())                 # Print the JSON response
 | ------------------------------|:-------------:|
 
 **Example**
+Username-Password Flow is the easiest to use as an example. 
+
 ```Python
 oauth = SalesforceOAuth2(
     client_id='your_client_id',
@@ -169,8 +171,23 @@ oauth = SalesforceOAuth2(
     sandbox=True                        # True = test.salesforce.com, False = login.salesforce.com
 )
 sf_authentication = oauth.get_access_token()
-response = sf_authentication.json()
-print(response)
+json_response = sf_authentication.json()
+```
+* Authenticate and extract the ```access_token``` and ```instance_url``` from the JSON response.
+```
+access_token = json_response['access_token']
+instance_url = json_response['instance_url']
+```
+* Create a REST API request with the authenticated credentials
+```
+rest = RESTApi(access_token=access_token, instance_url=instance_url)
+get_request = rest.rest_api_get(rest_url='sobjects/Account', api_version='39.0')    # full url = instance_url/services/data/v39.0/sobjects/Account
+print(get_request)                  # <Response [200]>
+print(get_request.json())
+
+"""
+{'recentItems': [], 'objectDescribe': {'feedEnabled': True, 'layoutable': True, 'replicateable': True, 'deprecatedAndHidden': False, 'updateable': True, 'mergeable': True, 'activateable': False, 'name': 'Account', 'searchable': True, 'queryable': True, 'undeletable': True, 'retrieveable': True, 'deletable': True, 'mruEnabled': True, 'isSubtype': False, 'customSetting': False, 'label': 'Account', 'triggerable': True, 'hasSubtypes': False, 'custom': False, 'urls': {'listviews': '/services/data/v39.0/sobjects/Account/listviews', 'compactLayouts': '/services/data/v39.0/sobjects/Account/describe/compactLayouts', 'defaultValues': '/services/data/v39.0/sobjects/Account/defaultValues?recordTypeId&fields', 'quickActions': '/services/data/v39.0/sobjects/Account/quickActions', 'rowTemplate': '/services/data/v39.0/sobjects/Account/{ID}', 'layouts': '/services/data/v39.0/sobjects/Account/describe/layouts', 'sobject': '/services/data/v39.0/sobjects/Account', 'describe': '/services/data/v39.0/sobjects/Account/describe', 'approvalLayouts': '/services/data/v39.0/sobjects/Account/describe/approvalLayouts'}, 'keyPrefix': '001', 'labelPlural': 'Accounts', 'createable': True}}
+"""
 ```
 
 
