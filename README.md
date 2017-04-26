@@ -159,6 +159,7 @@ print(sf_authentication.json())                 # Print the JSON response
 | ------------------------------|:-------------:|
 
 **Example**
+
 Username-Password Flow is the easiest to use as an example. 
 
 ```Python
@@ -174,12 +175,12 @@ sf_authentication = oauth.get_access_token()
 json_response = sf_authentication.json()
 ```
 * Authenticate and extract the ```access_token``` and ```instance_url``` from the JSON response.
-```
+```Python
 access_token = json_response['access_token']
 instance_url = json_response['instance_url']
 ```
 * Create a REST API request with the authenticated credentials
-```
+```Python
 rest = RESTApi(access_token=access_token, instance_url=instance_url)
 get_request = rest.rest_api_get(rest_url='sobjects/Account', api_version='39.0')    # full url = instance_url/services/data/v39.0/sobjects/Account
 print(get_request)                  # <Response [200]>
