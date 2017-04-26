@@ -1,6 +1,6 @@
 # Salesforce OAuth2, REST API and Metadata API Examples (Python)
 
-Python implementations of Salesforce Oauth2 Flows, as well as authenticated REST API, SOAP API and Metadata API requests. Grab the code from this repository and get started!
+Python implementations of Salesforce Oauth2 Flows, as well as authenticated REST API and Metadata API requests. Grab the code from this repository and get started!
 
 
 ## Table of Contents
