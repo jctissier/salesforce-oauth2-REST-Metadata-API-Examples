@@ -202,6 +202,30 @@ print(get_request.json())
 | [Salesforce Documentation](https://developer.salesforce.com/docs/atlas.en-us.api_meta.meta/api_meta/file_based.htm)                         | [Code Sample](https://github.com/jctissier/Salesforce-Oauth2-REST-SOAP-API-Python-Examples/blob/master/Salesforce-APIs/Metadata_Api.py) |
 | ------------------------------|:-------------:|
 
+**Example**
+
+Username-Password Flow is the easiest to use as an example. (Same setup as REST API)
+
+```Python
+oauth = SalesforceOAuth2(
+    client_id='your_client_id',
+    client_secret='your_client_secret',
+    username='your_username',
+    password='your_password',
+    token='your_token',
+    sandbox=True                        # True = test.salesforce.com, False = login.salesforce.com
+)
+sf_authentication = oauth.get_access_token()
+json_response = sf_authentication.json()
+```
+* Authenticate and extract the ```access_token``` and ```instance_url``` from the JSON response.
+```Python
+access_token = json_response['access_token']
+instance_url = json_response['instance_url']
+```
+
+
+
 ## Notes
 **Author**: Jean-Claude Tissier
 
