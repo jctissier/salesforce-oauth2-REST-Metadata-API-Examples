@@ -2,6 +2,8 @@
 
 Python implementations of Salesforce Oauth2 Flows, as well as authenticated REST API and Metadata API requests. Grab the code from this repository and get started!
 
+Using these code samples, you could easily spin up a web app that will interact with your various Salesforce Orgs and manipulate your data. 
+
 
 ## Table of Contents
 | Topic                         | SF Documentation | Code Sample |
