@@ -1,0 +1,12 @@
+{
+  "packageDirectories": [
+    {
+      "path": "o2a-app",
+      "default": true
+    }
+  ],
+  "name": "Z:\Projects\GitProjects\salesforce-oauth2-REST-Metadata-API-Examples\DXProject1\DXProject1",
+  "namespace": "Grafted Demo Org",
+  "sfdcLoginUrl": "https://login.salesforce.com",
+  "sourceApiVersion": "55.0"
+}
